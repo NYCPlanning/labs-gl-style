@@ -8,6 +8,7 @@ It also contains a simple mapboxGL map that consumes the `style.json`, so you ca
 
 ## Files
 `data/v3.json` - tileJSON describing the vector tiles hosted at `tiles.planninglabs.nyc`
+
 `data/style.json` - a custom mapboxGL style (based on [positron](https://github.com/openmaptiles/positron-gl-style))
 
 ## Local Development
