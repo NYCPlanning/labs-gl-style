@@ -1390,7 +1390,7 @@
             "text-field":"{name:latin} {name:nonlatin}"
          },
          "paint":{
-            "text-color":"#bbb",
+            "text-color":"rgb(117, 129, 145)",
             "text-halo-color":"#fff",
             "text-translate":[
                0,
