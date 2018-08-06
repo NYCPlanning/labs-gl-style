@@ -15,3 +15,6 @@ It also contains a simple mapboxGL map that consumes the `style.json`, so you ca
 - Clone this repo `git clone https://github.com/NYCPlanning/labs-gl-style.git`
 - Run a local webserver `cd labs-gl-style && python -m SimpleHTTPServer 8000`
 - Use [maputnik-dev-server](https://github.com/NYCPlanning/labs-maputnik-dev-server) to edit the style, copy and paste new layer configs into `data/style.json`
+
+## openmaptiles Server
+run with `sudo docker run -d -v $(pwd):/data -p 8080:80 klokantech/openmaptiles-server` (removes --it and --rm flags that are used in the example, so that the container's filesystem can persist.
