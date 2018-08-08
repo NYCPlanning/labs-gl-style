@@ -34,7 +34,7 @@
          "url": "//raw.githubusercontent.com/NYCPlanning/labs-gl-style/master/data/v3.json"
       }
    },
-   "sprite":"//raw.githubusercontent.com/NYCPlanning/labs-gl-style/master/data/sprite",
+   "sprite":"https://tiles.planninglabs.nyc/styles/positron/sprite",
    "glyphs":"https://tiles.planninglabs.nyc/fonts/{fontstack}/{range}.pbf",
    "layers":[
       {
@@ -1568,6 +1568,10 @@
             ],
             "text-justify":"center",
             "visibility":"visible",
+            "text-offset":[
+               0.5,
+               0
+            ],
             "text-anchor":"center",
             "text-field":"{name:latin}\n{name:nonlatin}"
          },
@@ -1609,6 +1613,10 @@
             ],
             "text-justify":"center",
             "visibility":"visible",
+            "text-offset":[
+               0.5,
+               0
+            ],
             "text-anchor":"center",
             "text-field":"{name:latin}\n{name:nonlatin}"
          },
@@ -1648,16 +1656,22 @@
                "Metropolis Regular",
                "Noto Sans Regular"
             ],
-            "text-justify":"center",
+            "text-justify":"left",
             "visibility":"visible",
-            "text-anchor":"center",
+            "text-offset":[
+               0.5,
+               0.2
+            ],
+            "icon-size":0.4,
+            "text-anchor":"left",
             "text-field":"{name:latin}\n{name:nonlatin}"
          },
          "paint":{
             "text-color":"rgb(117, 129, 145)",
             "text-halo-color":"rgb(242,243,240)",
             "text-halo-width":1,
-            "text-halo-blur":1
+            "text-halo-blur":1,
+            "icon-opacity":0.7
          }
       },
       {
@@ -1684,21 +1698,52 @@
          ],
          "layout":{
             "text-size":10,
+            "icon-image":{
+               "base":1,
+               "stops":[
+                  [
+                     0,
+                     "circle-11"
+                  ],
+                  [
+                     8,
+                     ""
+                  ]
+               ]
+            },
             "text-transform":"uppercase",
             "text-font":[
                "Metropolis Regular",
                "Noto Sans Regular"
             ],
-            "text-justify":"center",
+            "text-justify":"left",
             "visibility":"visible",
-            "text-anchor":"center",
+            "text-offset":[
+               0.5,
+               0.2
+            ],
+            "icon-size":0.4,
+            "text-anchor":{
+               "base":1,
+               "stops":[
+                  [
+                     0,
+                     "left"
+                  ],
+                  [
+                     8,
+                     "center"
+                  ]
+               ]
+            },
             "text-field":"{name:latin}\n{name:nonlatin}"
          },
          "paint":{
             "text-color":"rgb(117, 129, 145)",
             "text-halo-color":"rgb(242,243,240)",
             "text-halo-width":1,
-            "text-halo-blur":1
+            "text-halo-blur":1,
+            "icon-opacity":0.7
          }
       },
       {
@@ -1738,21 +1783,52 @@
          ],
          "layout":{
             "text-size":10,
+            "icon-image":{
+               "base":1,
+               "stops":[
+                  [
+                     0,
+                     "circle-11"
+                  ],
+                  [
+                     8,
+                     ""
+                  ]
+               ]
+            },
             "text-transform":"uppercase",
             "text-font":[
                "Metropolis Regular",
                "Noto Sans Regular"
             ],
-            "text-justify":"center",
+            "text-justify":"left",
             "visibility":"visible",
-            "text-anchor":"center",
+            "text-offset":[
+               0.5,
+               0.2
+            ],
+            "icon-size":0.4,
+            "text-anchor":{
+               "base":1,
+               "stops":[
+                  [
+                     0,
+                     "left"
+                  ],
+                  [
+                     8,
+                     "center"
+                  ]
+               ]
+            },
             "text-field":"{name:latin}\n{name:nonlatin}"
          },
          "paint":{
             "text-color":"rgb(117, 129, 145)",
             "text-halo-color":"rgb(242,243,240)",
             "text-halo-width":1,
-            "text-halo-blur":1
+            "text-halo-blur":1,
+            "icon-opacity":0.7
          }
       },
       {
@@ -1787,21 +1863,52 @@
          ],
          "layout":{
             "text-size":14,
+            "icon-image":{
+               "base":1,
+               "stops":[
+                  [
+                     0,
+                     "star-11"
+                  ],
+                  [
+                     8,
+                     ""
+                  ]
+               ]
+            },
             "text-transform":"uppercase",
             "text-font":[
                "Metropolis Regular",
                "Noto Sans Regular"
             ],
-            "text-justify":"center",
+            "text-justify":"left",
             "visibility":"visible",
-            "text-anchor":"center",
+            "text-offset":[
+               0.5,
+               0.2
+            ],
+            "icon-size":1,
+            "text-anchor":{
+               "base":1,
+               "stops":[
+                  [
+                     0,
+                     "left"
+                  ],
+                  [
+                     8,
+                     "center"
+                  ]
+               ]
+            },
             "text-field":"{name:latin}\n{name:nonlatin}"
          },
          "paint":{
             "text-color":"rgb(117, 129, 145)",
             "text-halo-color":"rgb(242,243,240)",
             "text-halo-width":1,
-            "text-halo-blur":1
+            "text-halo-blur":1,
+            "icon-opacity":0.7
          }
       },
       {
@@ -1841,20 +1948,52 @@
          ],
          "layout":{
             "text-size":14,
+            "icon-image":{
+               "base":1,
+               "stops":[
+                  [
+                     0,
+                     "circle-11"
+                  ],
+                  [
+                     8,
+                     ""
+                  ]
+               ]
+            },
             "text-transform":"uppercase",
             "text-font":[
                "Metropolis Regular",
                "Noto Sans Regular"
             ],
-            "text-justify":"center",
+            "text-justify":"left",
             "visibility":"visible",
+            "text-offset":[
+               0.5,
+               0.2
+            ],
+            "icon-size":0.4,
+            "text-anchor":{
+               "base":1,
+               "stops":[
+                  [
+                     0,
+                     "left"
+                  ],
+                  [
+                     8,
+                     "center"
+                  ]
+               ]
+            },
             "text-field":"{name:latin}\n{name:nonlatin}"
          },
          "paint":{
             "text-color":"rgb(117, 129, 145)",
             "text-halo-color":"rgb(242,243,240)",
             "text-halo-width":1,
-            "text-halo-blur":1
+            "text-halo-blur":1,
+            "icon-opacity":0.7
          }
       },
       {
