@@ -26,3 +26,7 @@ Use [spritezero-cli](https://github.com/mapbox/spritezero-cli) to create `.png` 
 - Run the commands to generate the sprites at each resolution:
   - `spritezero data/sprite svg/`
   - `spritezero data/sprite@2x svg/ --ratio=2`
+
+To test sprites locally:
+- Temporarily change the `"sprite"` value to `"http://localhost:8000/data/sprite",`
+- Enable CORS by running the local server with `python simple-cors-http-server.py`
