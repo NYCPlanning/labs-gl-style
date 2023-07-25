@@ -34,7 +34,7 @@
          "url": "//raw.githubusercontent.com/NYCPlanning/labs-gl-style/master/data/v3.json"
       }
    },
-   "sprite":"https://tiles.planninglabs.nyc/styles/positron/sprite",
+   "sprite":"https://layers-api.planninglabs.nyc/static/sprite",
    "glyphs":"https://tiles.planninglabs.nyc/fonts/{fontstack}/{range}.pbf",
    "layers":[
       {
