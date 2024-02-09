@@ -17,4 +17,16 @@ It also contains a simple mapboxGL map that consumes the `style.json`, so you ca
 - Use [maputnik-dev-server](https://github.com/NYCPlanning/labs-maputnik-dev-server) to edit the style, copy and paste new layer configs into `data/style.json`
 
 ## openmaptiles Server
-run with `sudo docker run -d -v $(pwd):/data -p 8080:80 klokantech/openmaptiles-server` (removes --it and --rm flags that are used in the example, so that the container's filesystem can persist.
+Run with `sudo docker run -d -v $(pwd):/data -p 8080:80 klokantech/openmaptiles-server` (removes --it and --rm flags that are used in the example, so that the container's filesystem can persist.
+
+## Sprites
+Use [spritezero-cli](https://github.com/mapbox/spritezero-cli) to create `.png` and `.json` files in `data/`.
+- Install the command-line interface: `npm install -g @mapbox/spritezero-cli`
+- Add/edit/delete SVG files in `svg/`
+- Run the commands to generate the sprites at each resolution:
+  - `spritezero data/sprite svg/`
+  - `spritezero data/sprite@2x svg/ --ratio=2`
+
+To test sprites locally:
+- Temporarily change the `"sprite"` value to `"http://localhost:8000/data/sprite",`
+- Enable CORS by running the local server with `python simple-cors-http-server.py`
